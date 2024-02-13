@@ -28,11 +28,12 @@ const teams = [
 ];
 const TeamSection = () => {
   return (
-    <section className="py-4">
+    <section className="py-10">
       <div className="container mx-auto">
+        <h1 className="mx-auto text-3xl font-bold p-5 w-fit">Meet the Team</h1>
         <div className="grid  place-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:px-28">
           {teams.map((person, index) => {
-            return <PersonCard {...person} key={index} />;
+            return <PersonCard {...person} key={index} index={index + 1} />;
           })}
         </div>
       </div>

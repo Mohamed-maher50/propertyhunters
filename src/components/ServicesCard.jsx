@@ -1,8 +1,14 @@
 import React from "react";
 
-const ServicesCard = ({ img, title, href, date, desc }) => {
+const ServicesCard = ({ img, title, href, date, desc, index }) => {
   return (
-    <li className="w-full mx-auto group sm:max-w-sm">
+    <li
+      className="w-full mx-auto group sm:max-w-sm"
+      data-aos-delay={`${(index + 1) * 300}`}
+      data-aos-duration="1200"
+      data-aos-easing="ease-out"
+      data-aos="fade-up"
+    >
       <a href={href}>
         <img
           src={img}

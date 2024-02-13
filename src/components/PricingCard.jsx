@@ -16,9 +16,16 @@ const PricingCard = ({ item }) => {
         </div>
         <p>{item.desc}</p>
       </div>
-      <ul className="p-8 space-y-3 ">
+      <ul className="p-8 space-y-3 overflow-hidden" data-aos-mirror={"true"}>
         {item.features.map((featureItem, idx) => (
-          <li key={idx} className="flex items-center gap-5">
+          <li
+            key={idx}
+            className="flex items-center gap-5"
+            data-aos="fade-left"
+            data-aos-mirror={"true"}
+            data-aos-delay={(idx + 1) * 150}
+            data-aos-offset={-100} // offset (in px) from the original trigger point
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 "

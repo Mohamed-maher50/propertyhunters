@@ -1,8 +1,13 @@
 import React from "react";
 
-const PersonCard = ({ imgUrl, name, job }) => {
+const PersonCard = ({ imgUrl, name, job, index }) => {
   return (
-    <div className="overflow-hidden  w-fit">
+    <div
+      className="overflow-hidden  w-fit"
+      data-aos="zoom-in"
+      data-aos-delay={index * 150}
+      data-aos-duration={"1500"}
+    >
       <img
         src={imgUrl}
         alt={name + job}

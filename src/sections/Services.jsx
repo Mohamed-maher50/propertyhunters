@@ -36,7 +36,7 @@ const Services = () => {
   return (
     <section className="py-10">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 ">
+        <div className="grid md:grid-cols-2 " data-aos="fade-in">
           <div className="gap-6 grid pr-8">
             <h1 className="text-4xl">Empowering Your Sales Success</h1>
             <p>
@@ -49,7 +49,7 @@ const Services = () => {
         </div>
         <ul className="grid gap-x-8 gap-y-10 mt-16 sm:grid-cols-2 lg:grid-cols-4">
           {posts.map((items, key) => (
-            <ServicesCard key={key} {...items} />
+            <ServicesCard key={key} {...items} index={key} />
           ))}
         </ul>
       </div>

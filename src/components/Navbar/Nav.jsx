@@ -27,7 +27,7 @@ export const Nav = () => {
     // Sticky strick
     const customStyle = ["sticky-nav", "fixed", "border-b", "left-0"];
     window.onscroll = () => {
-      if (window.scrollY > 80) navRef.current.classList.add(...customStyle);
+      if (window.scrollY > 180) navRef.current.classList.add(...customStyle);
       else navRef.current.classList.remove(...customStyle);
     };
   }, [state]);
