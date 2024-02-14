@@ -10,7 +10,6 @@ import { ToastContainer, toast } from "react-toastify";
 function App() {
   useEffect(() => {
     Aos.init();
-    toast.success("helo");
   }, []);
 
   return (
