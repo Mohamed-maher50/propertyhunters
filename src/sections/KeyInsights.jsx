@@ -9,7 +9,7 @@ const KeyInsights = () => {
           <h2 className="text-5xl text-primary underline font-bold">
             Key Insights
           </h2>
-          <div className="grid p-5 grid-cols-2 lg:grid-cols-3">
+          <div className="grid p-5 max-sm:grid-cols-1 grid-cols-2 lg:grid-cols-3">
             <div className="grid    gap-4 grid-col">
               <div className="grid gap-2">
                 <span className="text-primary opacity-80 italic underline text-3xl font-bold">
@@ -25,7 +25,7 @@ const KeyInsights = () => {
                   Vetted Leads Generator
                 </h1>
               </div>
-              <div className="grid gap-2">
+              <div className="grid gap-2 ">
                 <span className="text-primary opacity-80 underline italic  text-3xl font-bold">
                   <span className="p-2 ">Over</span>
                   <CountUp end={10000} decimal="," enableScrollSpy={true} />+
@@ -35,7 +35,7 @@ const KeyInsights = () => {
                 </h1>
               </div>
             </div>
-            <div className="grid  gap-6 grid-col">
+            <div className="grid   gap-6">
               <div className="grid gap-2">
                 <span className="text-primary underline opacity-80 italic  text-3xl font-bold">
                   Just under $1M+

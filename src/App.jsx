@@ -6,7 +6,8 @@ import Aos from "aos";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import { Helmet } from "react-helmet";
 function App() {
   useEffect(() => {
     Aos.init();
@@ -15,6 +16,12 @@ function App() {
   return (
     <>
       <div className="container mx-auto">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>property hunters Home</title>
+          <meta name="description" content="asdfsdfsdfsd" />
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <Nav />
       </div>
       <Routes>
