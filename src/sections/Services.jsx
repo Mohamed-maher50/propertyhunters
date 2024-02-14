@@ -38,8 +38,10 @@ const Services = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 " data-aos="fade-in">
           <div className="gap-6 grid pr-8">
-            <h1 className="text-4xl">Empowering Your Sales Success</h1>
-            <p>
+            <h1 className="text-4xl font-bold italic underline text-primary">
+              Empowering Your Sales Success
+            </h1>
+            <p className="text-xl">
               Our comprehensive range of services is tailored to meet your
               specific sales needs. With AK Callers by your side, you'll
               experience unparalleled support in generating leads and securing

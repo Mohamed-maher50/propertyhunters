@@ -5,6 +5,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      Raleway: ["Raleway", "'sans serif'"],
+    },
+
     colors: {
       primary: "#3652AD",
       secondary: "#FE7A36",
