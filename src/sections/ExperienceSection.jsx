@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperienceSection = () => {
   return (
-    <section className="relative w-full  overflow-hidden  min-h-[500px] ">
+    <section className="relative w-full  overflow-hidden  ">
       <div className="container mx-auto">
         <div className="absolute bg-primary p-3 right-0 left-0 z-10 h-full w-full grid place-items-center ">
           <div
