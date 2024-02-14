@@ -5,14 +5,14 @@ export const Nav = () => {
   const [state, setState] = useState(false);
   const navRef = useRef();
 
-  // Replace javascript:void(0) path with your path
+  // Replace  path with your path
   const navigation = [
-    { title: "Customers", path: "javascript:void(0)" },
-    { title: "Careers", path: "javascript:void(0)" },
-    { title: "Guides", path: "javascript:void(0)" },
-    { title: "Partners", path: "javascript:void(0)" },
-    { title: "Teams", path: "javascript:void(0)" },
-    { title: "Blog", path: "javascript:void(0)" },
+    { title: "Customers", path: "" },
+    { title: "Careers", path: "" },
+    { title: "Guides", path: "" },
+    { title: "Partners", path: "" },
+    { title: "Teams", path: "" },
+    { title: "Blog", path: "" },
   ];
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export const Nav = () => {
     <nav ref={navRef} className="bg-white w-full top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
         <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
-          <Link>
+          <Link to={"/"}>
             <img
               src="https://www.floatui.com/logo.svg"
               width={120}
@@ -89,7 +89,7 @@ export const Nav = () => {
           <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
             <li className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <Link
-                to={"/"}
+                to={"/contact"}
                 className="block py-2 px-4 text-center text-white font-medium bg-primary duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
               >
                 Let's get started

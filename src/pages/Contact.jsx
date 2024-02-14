@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { ValidationForm } from "../services/ValidationForm";
 import { SendEmail } from "../services/SendMail";
+import { toast } from "react-toastify";
 
 const contactMethods = [
   {
@@ -73,9 +74,19 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
   const handleSubmitForm = async (values) => {
-    await SendEmail(values);
+    const promise = new Promise((resolve, reg) => {
+      SendEmail(values).then(([status, errors]) => {
+        if (errors) return reg(errors);
+        return resolve(status);
+      });
+    });
+    toast.promise(promise, {
+      pending: "please wait ",
+      success: "thank you for connection👌",
+      error: "sorry you can contact us by phone number 🤯",
+    });
   };
-  console.log(errors);
+
   return (
     <main className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">

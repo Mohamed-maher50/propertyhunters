@@ -34,7 +34,7 @@ const Advantage = () => {
               today!
             </p>
             <a
-              href="javascript:void(0)"
+              href=""
               className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium"
             >
               Learn more

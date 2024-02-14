@@ -22,3 +22,49 @@
 .custom-shape-divider-bottom-1707815190 .shape-fill {
   fill: #3652ad;
 }
+.custom-toast-container {
+  /* Set background color to primary color */
+  background-color: #3652ad;
+  /* Set text color to white */
+  color: white;
+  /* Set font family */
+  font-family: Arial, sans-serif;
+}
+
+/* Custom styles for individual toast elements */
+.custom-toast {
+  /* Set background color to secondary color */
+  background-color: #fe7a36;
+  /* Set text color to white */
+  color: white;
+  /* Add padding */
+  padding: 10px 20px;
+  /* Set border radius */
+  border-radius: 8px;
+  /* Set box shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styles for toast progress bar */
+.custom-toast-progress {
+  @apply bg-primary;
+}
+.Toastify__toast-body {
+  background-color: #ffffff; /* Set background color to white */
+  color: #333333; /* Set text color to black */
+}
+.Toastify__toast-icon > svg {
+  /* fill: #3652ad; */
+  @apply fill-primary;
+}
+.Toastify__toast-theme--light .Toastify__progress-bar {
+  @apply bg-secondary;
+}
+.light-theme .custom-toast {
+  background-color: #f0f0f0; /* Set background color to light gray */
+  color: #333333; /* Set text color to black */
+}
+
+.light-theme .custom-toast-progress {
+  background-color: #333333; /* Set progress bar color to black */
+}
