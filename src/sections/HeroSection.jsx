@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -9,15 +8,6 @@ const HeroSection = () => {
       data-aos-delay="950"
       data-aos-duration="1500"
     >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>property hunters Home</title>
-        <meta
-          name="description"
-          content="Boost your real estate business with experienced virtual assistants. Get qualified leads from data lists. Proven model for scaling brokerages. We help real estate investors, realtors, and brokerages close more deals"
-        />
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
       <div className="max-w-screen-xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
         <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
           {/* <h1 className="text-sm text-indigo-600 font-medium">
@@ -51,8 +41,8 @@ const HeroSection = () => {
         </div>
         <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
           <img
-            src="/background/blog1.webp"
-            className=" md:rounded-tl-[108px] object-contain"
+            src="https://images.unsplash.com/photo-1573164713619-24c711fe7878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
+            className=" md:rounded-tl-[108px]"
             alt=""
           />
         </div>
