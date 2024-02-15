@@ -1,5 +1,3 @@
-import React from "react";
-
 const ExperienceSection = () => {
   return (
     <section className="relative w-full  overflow-hidden  ">

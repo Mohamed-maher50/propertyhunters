@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet";
+import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   useEffect(() => {
     Aos.init();
@@ -19,7 +20,15 @@ function App() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>property hunters Home</title>
-          <meta name="description" content="asdfsdfsdfsd" />
+          <meta
+            name="description"
+            content="Boost your real estate business with experienced virtual assistants. Get qualified leads from data lists. Proven model for scaling brokerages. We help real estate investors, realtors, and brokerages close more deals"
+          />
+          <meta
+            name="keywords"
+            content="Real estate, Property listings, Homes for sale, Apartments for rent,Real estate agents,Property management,Commercial real estate,Residential properties,Investment properties,Real estate market,Home buying tips,Mortgage rates,Open houses,Rental properties,Real estate investments,Land for sale,Luxury homes,Foreclosure listings,,Real estate news"
+          />
+
           <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
         <Nav />
@@ -27,6 +36,7 @@ function App() {
       <Routes>
         <Route element={<Home />} path="/" />
         <Route element={<Contact />} path="/contact" />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
       <ToastContainer

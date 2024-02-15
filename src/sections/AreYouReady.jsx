@@ -1,5 +1,3 @@
-import React from "react";
-
 const AreYouReady = () => {
   return (
     <section className="py-10" data-aos="fade-in">

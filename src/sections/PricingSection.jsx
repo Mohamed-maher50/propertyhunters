@@ -3,7 +3,6 @@ import PricingCard from "../components/PricingCard";
 const plans = [
   {
     name: "1 caller",
-
     price: 35,
     isMostPop: true,
     features: [
@@ -15,7 +14,6 @@ const plans = [
   },
   {
     name: "Enterprise",
-
     price: 60,
     isMostPop: false,
     features: [

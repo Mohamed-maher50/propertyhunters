@@ -3,31 +3,31 @@ import ServicesCard from "../components/ServicesCard";
 
 const posts = [
   {
-    title: "A Quick Guide to WordPress Hosting",
-    desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations.",
+    title: "Telemarketing",
+    desc: "Property Hunters Telemarketing Service provides clients with top talent capable of handling a large volume of calls while executing their marketing strategies as good if not better than an in-house team.",
     img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    date: "Jan 4 2022",
+    // date: "Jan 4 2022",
     href: "",
   },
   {
-    title: "7 Promising VS Code Extensions Introduced in 2022",
-    desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks.",
+    title: "lead generation",
+    desc: "property Hunters Lead Generation Service, we will go through our client’s data to provide them with the best possible qualified leads. ",
     img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    date: "Jan 4 2022",
+    // date: "Jan 4 2022",
     href: "",
   },
   {
-    title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-    desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational.",
+    title: "Business development",
+    desc: "Property Hunters Business Development Service, We work with our clients to help them improve their revenue stream. We work closely with them providing daily, weekly and monthly feedback.",
     img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    date: "Jan 4 2022",
+    // date: "Jan 4 2022",
     href: "",
   },
   {
-    title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-    desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational.",
+    title: "quality assurance",
+    desc: "Property Hunters Quality Assurance, We never send to our clients the expected deliverables without being properly screened, qualified, and checked that it meets the standards we are expected to adhere to. Every Lead, Sale, Appointment is reviewed by our QA department",
     img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    date: "Jan 4 2022",
+    // date: "Jan 4 2022",
     href: "",
   },
 ];
@@ -37,15 +37,13 @@ const Services = () => {
     <section className="py-10">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 " data-aos="fade-in">
-          <div className="gap-6 grid pr-8">
-            <h1 className="text-4xl font-bold italic underline text-primary">
-              Empowering Your Sales Success
+          <div className="gap-3 grid pr-8">
+            <h1 className="text-4xl font-bold   text-primary">
+              why property hunters ?
             </h1>
             <p className="text-xl">
-              Our comprehensive range of services is tailored to meet your
-              specific sales needs. With AK Callers by your side, you'll
-              experience unparalleled support in generating leads and securing
-              valuable appointments that lead to more closed deals.
+              - well-experinced virtual assistants who can help you scale up
+              your business and closing more deals
             </p>
           </div>
         </div>
