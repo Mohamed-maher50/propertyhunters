@@ -3,17 +3,25 @@ import React from "react";
 const PricingCard = ({ item }) => {
   return (
     <div
-      className={`relative flex-1 bg-lightBlue  flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${
+      className={`relative flex-1 bg-lightBlue min-w-80 max-w-96 text-start  flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${
         item.isMostPop ? "mt-10" : ""
       }`}
     >
       <div className="p-8 space-y-4 border-b">
         <span className="text-3xl font-bold text-primary">{item.name}</span>
-        <div className=" text-3xl text-se font-semibold">
-          <span className=""> ${item.price}</span>
 
-          <span className="text-xl  font-normal">/per hour</span>
-        </div>
+        {item.price ? (
+          <>
+            {" "}
+            <div className=" text-3xl text-se font-semibold">
+              <span className=""> ${item.price}</span>{" "}
+              <span className="text-xl  font-normal">/per hour</span>{" "}
+            </div>
+          </>
+        ) : (
+          <div className="text-lg capitalize">customized pricing plans</div>
+        )}
+
         <p>{item.desc}</p>
       </div>
       <ul className="p-8 space-y-3 overflow-hidden" data-aos-mirror={"true"}>

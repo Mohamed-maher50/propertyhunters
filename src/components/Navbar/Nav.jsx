@@ -38,10 +38,11 @@ export const Nav = () => {
         <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
           <Link to={"/"}>
             <img
-              src="https://www.floatui.com/logo.svg"
+              src="/logo.png"
               width={120}
               height={50}
               alt="Float UI logo"
+              className="w-[100px] h-[70px]"
             />
           </Link>
           <div className="lg:hidden">
