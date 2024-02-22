@@ -47,8 +47,9 @@ const PricingSection = () => {
           <div className="grid gap-4 max-sm:text-center">
             <h1 className="text-4xl text-white font-bold">Pricing Options</h1>
             <p className="text-white">
-              At AK Callers, we offer flexible pricing options to meet your
-              specific needs and budget. Contact us today to learn more.
+              property hunters Callers, we offer flexible pricing options to
+              meet your specific needs and budget. Contact us today to learn
+              more.
             </p>{" "}
             <button
               type="button"

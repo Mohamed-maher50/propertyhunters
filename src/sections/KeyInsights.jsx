@@ -27,7 +27,7 @@ const KeyInsights = () => {
               <div className="grid gap-2 ">
                 <span className="text-primary opacity-80 underline italic  text-3xl font-bold">
                   <span className="p-2 ">Over</span>
-                  <CountUp end={10000} decimal="," enableScrollSpy={true} />+
+                  <CountUp end={7000} decimal="," enableScrollSpy={true} />+
                 </span>
                 <h1 className="text-2xl font-normal text-gray-600">
                   Daily Cold Calls
@@ -47,7 +47,7 @@ const KeyInsights = () => {
                 <span className="text-primary underline opacity-80 italic  text-3xl font-extrabold">
                   <CountUp
                     enableScrollSpy={true}
-                    end={150}
+                    end={70}
                     duration={5}
                     decimal=","
                   />{" "}

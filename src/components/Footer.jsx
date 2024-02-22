@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-white rounded-lg  overflow-hidden shadow dark:bg-gray-900 ">
@@ -9,19 +11,15 @@ const Footer = () => {
         data-aos-anchor-placement="center-center"
       >
         <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
+          <Link to={"/"}>
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8"
-              alt="Flowbite Logo"
+              src="/logo.png"
+              width={120}
+              height={50}
+              alt="Float UI logo"
+              className="w-[130px] h-[90px] object-contain"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
-          </a>
+          </Link>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
               <a href="#" className="hover:underline me-4 md:me-6">
@@ -49,7 +47,7 @@ const Footer = () => {
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2023{" "}
           <a href="https://flowbite.com/" className="hover:underline">
-            Flowbite™
+            Property Hunters
           </a>
           . All Rights Reserved.
         </span>

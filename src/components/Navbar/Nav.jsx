@@ -42,7 +42,7 @@ export const Nav = () => {
               width={120}
               height={50}
               alt="Float UI logo"
-              className="w-[100px] h-[70px]"
+              className="w-[130px] h-[90px] object-contain"
             />
           </Link>
           <div className="lg:hidden">

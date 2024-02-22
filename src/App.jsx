@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet";
 import NotFoundPage from "./pages/NotFoundPage";
+import Whatsapp from "./components/Whatsapp";
 function App() {
   useEffect(() => {
     Aos.init();
@@ -39,6 +40,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
+      <Whatsapp />
       <ToastContainer
         autoClose={5000}
         hideProgressBar={false}
