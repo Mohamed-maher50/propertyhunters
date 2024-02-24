@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 const KeyInsights = () => {
   return (
-    <section className="bg-gray-100">
+    <section id="customer_section" className="bg-gray-100">
       <div className="container  mx-auto">
         <div className="grid py-4 gap-10">
           <h2 className="text-5xl text-primary underline font-bold">

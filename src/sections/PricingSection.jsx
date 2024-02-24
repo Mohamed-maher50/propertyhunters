@@ -41,7 +41,7 @@ const plans = [
 ];
 const PricingSection = () => {
   return (
-    <section className="relative bg-secondary  py-10">
+    <section id="pricing_section" className="relative bg-secondary  py-10">
       <div className="container mx-auto">
         <div className=" grid text-center place-items-center place-content-center justify-center">
           <div className="grid gap-4 max-sm:text-center">

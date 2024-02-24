@@ -3,7 +3,7 @@ import AdvantageCard from "../components/AdvantageCard";
 
 const Advantage = () => {
   return (
-    <section className="py-14">
+    <section id="blog_section" className="py-14">
       <div className="max-w-screen-xl mx-auto md:px-8">
         <AdvantageCard
           imgUrl={

@@ -7,12 +7,11 @@ export const Nav = () => {
 
   // Replace  path with your path
   const navigation = [
-    { title: "Customers", path: "" },
-    { title: "Careers", path: "" },
-    { title: "Guides", path: "" },
-    { title: "Partners", path: "" },
-    { title: "Teams", path: "" },
-    { title: "Blog", path: "" },
+    { title: "home", path: "#home-section" },
+    { title: "Customers", path: "#customer_section" },
+    { title: "contact", path: "#contact-form" },
+    { title: "Pricing", path: "#pricing_section" },
+    { title: "Blog", path: "#blog_section" },
   ];
 
   useEffect(() => {
@@ -25,20 +24,19 @@ export const Nav = () => {
     else body.classList.remove(...customBodyStyle);
 
     // Sticky strick
-    const customStyle = ["sticky-nav", "fixed", "border-b", "left-0"];
-    window.onscroll = () => {
-      if (window.scrollY > 180) navRef.current.classList.add(...customStyle);
-      else navRef.current.classList.remove(...customStyle);
-    };
   }, [state]);
-
+  const customStyle = ["sticky-nav", "fixed", "border-b", "left-0"];
+  window.onscroll = () => {
+    if (window.scrollY > 110) navRef.current.classList.add(...customStyle);
+    else navRef.current.classList.remove(...customStyle);
+  };
   return (
     <nav ref={navRef} className="bg-white w-full top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
         <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
           <Link to={"/"}>
             <img
-              src="/logo.png"
+              src="/background/WhatsApp Image 2024-02-23 at 20.36.58_6ee60d36.jpg"
               width={120}
               height={50}
               alt="Float UI logo"
@@ -89,13 +87,13 @@ export const Nav = () => {
         >
           <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
             <li className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <Link
-                to={"/contact"}
+              <a
+                href="#contact-form"
                 onClick={() => setState(false)}
                 className="block py-2 px-4 text-center text-white font-medium bg-primary duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
               >
                 Let's get started
-              </Link>
+              </a>
             </li>
           </ul>
 

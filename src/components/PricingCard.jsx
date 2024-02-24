@@ -7,28 +7,33 @@ const PricingCard = ({ item }) => {
         item.isMostPop ? "mt-10" : ""
       }`}
     >
-      <div className="p-8 space-y-4 border-b">
+      <div className="px-8 pt-5 space-y-4 border-b">
         <span className="text-3xl font-bold text-primary">{item.name}</span>
 
         {item.price ? (
           <>
             {" "}
-            <div className=" text-3xl text-se font-semibold">
+            <div className=" text-3xl  font-semibold">
               <span className=""> ${item.price}</span>{" "}
               <span className="text-xl  font-normal">/per hour</span>{" "}
             </div>
           </>
         ) : (
-          <div className="text-lg capitalize">customized pricing plans</div>
+          <div className="text-lg capitalize font-bold">
+            customized pricing plans
+          </div>
         )}
 
         <p>{item.desc}</p>
       </div>
-      <ul className="p-8 space-y-3 overflow-hidden" data-aos-mirror={"true"}>
+      <ul
+        className="p-8 space-y-3 overflow-hidden pt-3"
+        data-aos-mirror={"true"}
+      >
         {item.features.map((featureItem, idx) => (
           <li
             key={idx}
-            className="flex items-center gap-5"
+            className="flex  capitalize items-center gap-5"
             data-aos="fade-left"
             data-aos-mirror={"true"}
             data-aos-delay={(idx + 1) * 150}

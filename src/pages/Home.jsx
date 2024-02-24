@@ -8,6 +8,7 @@ import PricingSection from "../sections/PricingSection";
 import TeamSection from "../sections/TeamSection";
 import KeyInsights from "../sections/KeyInsights";
 import AreYouReady from "../sections/AreYouReady";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -21,9 +22,10 @@ const Home = () => {
         <Advantage />
         <WhyUs />
         <PricingSection />
-        <TeamSection />
+        {/* <TeamSection /> */}
         <KeyInsights />
         <AreYouReady />
+        <Contact />
       </div>
     </div>
   );
