@@ -9,7 +9,7 @@ const WhyUs = () => {
         <AdvantageCard
           dir="rtl"
           imgUrl={
-            "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            "https://images.pexels.com/photos/8441811/pexels-photo-8441811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           }
           className="dir"
           desc="we are proudly serving (+70 ) clients of wholesalers, brokers, and realtors within the real estate industry, and we have (+230 ) employees seeking for growth, and delivering all desired results to our clients."

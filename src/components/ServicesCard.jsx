@@ -14,7 +14,10 @@ const ServicesCard = ({ img, title, href, date, desc, index }) => {
           src={img}
           loading="lazy"
           alt={title}
-          className="w-full rounded-lg"
+          style={{
+            height: 200,
+          }}
+          className=" object-cover rounded-lg  w-full"
         />
         <div className="mt-3 space-y-2">
           {/* <span className="block text-indigo-600 text-sm">{date}</span> */}

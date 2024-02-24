@@ -30,7 +30,7 @@ const contactMethods = [
   {
     link: "https://wa.me/+15513255732",
     icon: <FaWhatsapp className="text-green-400 text-xl" />,
-    contact: "+1 (555) 000-000",
+    contact: "+15513255732",
   },
 ];
 
@@ -75,7 +75,7 @@ const Contact = () => {
                     <Link
                       to={item.link}
                       target="_blank"
-                      className="flex-none text-gray-400 flex items-center"
+                      className="flex-none text-gray-600 flex items-center"
                     >
                       {item.icon}
                       <p>{item.contact}</p>

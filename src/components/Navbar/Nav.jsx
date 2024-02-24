@@ -26,10 +26,17 @@ export const Nav = () => {
     // Sticky strick
   }, [state]);
   const customStyle = ["sticky-nav", "fixed", "border-b", "left-0"];
-  window.onscroll = () => {
-    if (window.scrollY > 110) navRef.current.classList.add(...customStyle);
-    else navRef.current.classList.remove(...customStyle);
-  };
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (window.scrollY > 110) navRef.current.classList.add(...customStyle);
+      else navRef.current.classList.remove(...customStyle);
+    };
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
   return (
     <nav ref={navRef} className="bg-white w-full top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
