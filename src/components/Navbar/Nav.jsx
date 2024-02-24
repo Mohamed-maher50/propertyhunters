@@ -101,7 +101,11 @@ export const Nav = () => {
             <ul className="justify-center items-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
               {navigation.map((item, idx) => {
                 return (
-                  <li key={idx} className="text-gray-600 hover:text-indigo-600">
+                  <li
+                    onClick={() => setState(false)}
+                    key={idx}
+                    className="text-gray-600 hover:text-indigo-600"
+                  >
                     <a href={item.path}>{item.title}</a>
                   </li>
                 );
