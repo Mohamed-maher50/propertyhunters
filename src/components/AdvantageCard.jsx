@@ -1,6 +1,14 @@
 import React from "react";
 
-const AdvantageCard = ({ className = "", imgUrl, desc, ...props }) => {
+const AdvantageCard = ({
+  className = "",
+  imgUrl,
+  desc,
+  withTitle,
+  paragraphClassName = "",
+  ...props
+}) => {
+  console.log(paragraphClassName);
   return (
     <div
       {...props}
@@ -14,11 +22,13 @@ const AdvantageCard = ({ className = "", imgUrl, desc, ...props }) => {
         data-aos="fade-in"
         className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl"
       >
-        {/* <h3 className="text-indigo-600 font-semibold">How it works</h3> */}
-        <p className=" text-3xl text-primary font-semibold sm:text-4xl">
-          How it works
-        </p>
-        <p className="mt-3 text-gray-600">{desc}</p>
+        {withTitle && (
+          <p className=" text-3xl text-primary font-semibold sm:text-4xl">
+            How it works
+          </p>
+        )}
+
+        <p className={`mt-3 text-gray-600 ${paragraphClassName}`}>{desc}</p>
         <a
           href=""
           className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium"
