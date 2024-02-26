@@ -30,7 +30,7 @@ const contactMethods = [
   {
     link: "https://wa.me/+15513255732",
     icon: <FaWhatsapp className="text-green-400 text-xl" />,
-    contact: "+15513255732",
+    contact: "+1 (551) 325-5732",
   },
 ];
 
