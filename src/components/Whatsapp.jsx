@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Whatsapp = () => {
   return (
     <Link
-      to={"https://wa.me/+15513255732"}
+      to={"https://wa.me/+14099168655"}
       target={"_blank"}
       className="fixed bottom-5 right-5 shadow-lg hover:scale-95 rounded-full overflow-hidden bg-blue-50 cursor-pointer duration-500 ease-in-out"
     >
