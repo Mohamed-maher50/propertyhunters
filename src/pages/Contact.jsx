@@ -28,9 +28,9 @@ const contactMethods = [
     contact: "info@propertyhunters.co",
   },
   {
-    link: "https://wa.me/+15513255732",
+    link: "https://wa.me/+14099168655",
     icon: <FaWhatsapp className="text-green-400 text-xl" />,
-    contact: "+1 (551) 325-5732",
+    contact: "+1 (409) 916-8655",
   },
 ];
 
