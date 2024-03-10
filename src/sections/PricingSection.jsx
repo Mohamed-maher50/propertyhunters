@@ -2,7 +2,7 @@ import React from "react";
 import PricingCard from "../components/PricingCard";
 const plans = [
   {
-    name: "1-2 callers",
+    name: "1 caller",
     price: 4,
     isMostPop: true,
     features: [
@@ -14,8 +14,8 @@ const plans = [
     ],
   },
   {
-    name: "+3 callers",
-    price: 3.5,
+    name: "2-3 callers",
+    price: 4,
     isMostPop: false,
     features: [
       "native/ fluent English speakers",
@@ -26,7 +26,7 @@ const plans = [
     ],
   },
   {
-    name: "+10 callers",
+    name: "+4 callers",
     // price: "customized pricing plans",
     isMostPop: true,
     features: [
