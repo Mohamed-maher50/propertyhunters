@@ -3,7 +3,7 @@ import PricingCard from "../components/PricingCard";
 const plans = [
   {
     name: "1 caller",
-    price: 4,
+    price: 5,
     isMostPop: true,
     features: [
       `native/ fluent English speaker`,
