@@ -11,7 +11,6 @@ export const Nav = () => {
     { title: "Customers", path: "#customer_section" },
     { title: "contact", path: "#contact-form" },
     { title: "Pricing", path: "#pricing_section" },
-    { title: "Blog", path: "#blog_section" },
   ];
 
   useEffect(() => {
@@ -40,14 +39,14 @@ export const Nav = () => {
   return (
     <nav ref={navRef} className="bg-white w-full top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
-        <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
+        <div className="flex capitalize items-center justify-between  lg:block">
           <Link to={"/"}>
             <img
-              src="/background/WhatsApp Image 2024-02-23 at 20.36.58_6ee60d36.jpg"
+              src="/Logo.png"
               width={120}
               height={50}
               alt="Float UI logo"
-              className="w-[130px] h-[90px] object-contain"
+              className="h-[75px] object-contain"
             />
           </Link>
           <div className="lg:hidden">
@@ -88,7 +87,7 @@ export const Nav = () => {
           </div>
         </div>
         <div
-          className={`flex-1  justify-end  items-center flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto ${
+          className={`flex-1  capitalize  justify-end  items-center flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto ${
             state ? "h-screen pb-20 overflow-auto pr-4" : "hidden"
           }`}
         >
@@ -104,7 +103,7 @@ export const Nav = () => {
             </li>
           </ul>
 
-          <div className="flex-1 items-end justify-end lg:flex pr-9">
+          <div className="flex-1 max-sm:my-5 items-end justify-end lg:flex pr-9">
             <ul className="justify-center items-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
               {navigation.map((item, idx) => {
                 return (

@@ -7,10 +7,7 @@ const NotFoundPage = () => {
     <section class="bg-white dark:bg-gray-900">
       <Helmet>
         <title>not found page</title>
-        <meta
-          name="description"
-          content="property hunters not found this page"
-        />
+        <meta name="description" content="DMS not found this page" />
       </Helmet>
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div class="mx-auto max-w-screen-sm text-center">

@@ -12,7 +12,7 @@ const WhyUs = () => {
             "https://images.pexels.com/photos/8441811/pexels-photo-8441811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           }
           className="dir"
-          desc="we are proudly serving (+70 ) clients of wholesalers, brokers, and realtors within the real estate industry, and we have (+230 ) employees seeking for growth, and delivering all desired results to our clients."
+          desc="We are proudly serving (+40) clients of investors, wholesalers, and realtors within the real estate industry, and we have (+100) employees seeking growth, and delivering all desired results to our clients."
         />
       </div>
     </section>

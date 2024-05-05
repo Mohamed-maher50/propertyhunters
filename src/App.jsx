@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet";
 import NotFoundPage from "./pages/NotFoundPage";
 import Whatsapp from "./components/Whatsapp";
+import Test from "./components/Test";
 function App() {
   useEffect(() => {
     Aos.init();
@@ -20,7 +21,7 @@ function App() {
       <div className="container mx-auto">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>property hunters Home</title>
+          <title>DMS Home</title>
           <meta
             name="description"
             content="Boost your real estate business with experienced virtual assistants. Get qualified leads from data lists. Proven model for scaling brokerages. We help real estate investors, realtors, and brokerages close more deals"

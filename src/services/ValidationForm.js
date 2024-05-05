@@ -11,7 +11,7 @@ export const ValidationForm = {
     },
   },
   phone: {
-    required: "please enter your phone number",
+    required: " enter your phone number",
     pattern: {
       value: /^\+?[0-9]\d{1,20}$/i,
       message: "not valid phone number",
@@ -25,4 +25,15 @@ export const ValidationForm = {
     },
     required: "please enter your email",
   },
+  company:{
+    required: "company name is short",
+    maxLength: {
+      value: 200,
+      message: "this long name ",
+    },
+    minLength: {
+      value: 2,
+      message: "this is short name",
+    },
+  }
 };

@@ -8,7 +8,6 @@ const AdvantageCard = ({
   paragraphClassName = "",
   ...props
 }) => {
-  console.log(paragraphClassName);
   return (
     <div
       {...props}
@@ -29,7 +28,7 @@ const AdvantageCard = ({
         )}
 
         <p className={`mt-3 text-gray-600 ${paragraphClassName}`}>{desc}</p>
-        <a
+        {/* <a
           href=""
           className="inline-flex gap-x-1 items-center text-indigo-600 hover:text-indigo-500 duration-150 font-medium"
         >
@@ -46,7 +45,7 @@ const AdvantageCard = ({
               clipRule="evenodd"
             />
           </svg>
-        </a>
+        </a> */}
       </div>
     </div>
   );

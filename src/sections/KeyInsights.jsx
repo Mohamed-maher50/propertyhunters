@@ -37,7 +37,7 @@ const KeyInsights = () => {
             <div className="grid   gap-6">
               <div className="grid gap-2">
                 <span className="text-primary underline opacity-80 italic  text-3xl font-bold">
-                  Just under $1M+
+                  make it $2M
                 </span>
                 <h1 className="text-2xl  font-normal text-gray-600">
                   Deals closed from Leads
@@ -47,7 +47,7 @@ const KeyInsights = () => {
                 <span className="text-primary underline opacity-80 italic  text-3xl font-extrabold">
                   <CountUp
                     enableScrollSpy={true}
-                    end={70}
+                    end={40}
                     duration={5}
                     decimal=","
                   />{" "}

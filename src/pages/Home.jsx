@@ -9,10 +9,12 @@ import TeamSection from "../sections/TeamSection";
 import KeyInsights from "../sections/KeyInsights";
 import AreYouReady from "../sections/AreYouReady";
 import Contact from "./Contact";
+import PopUpWithBookingForm from "../components/PopUpWithBookingForm";
 
 const Home = () => {
   return (
     <div className="flex flex-col grow">
+      <PopUpWithBookingForm />
       <div className="grid gap-y-10">
         <section>
           <HeroSection />

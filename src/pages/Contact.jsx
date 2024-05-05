@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const contactMethods = [
   {
-    link: "mailto:info@propertyhunters.co",
+    link: "mailto:info@dialmasterssolutions.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,12 +25,12 @@ const contactMethods = [
         />
       </svg>
     ),
-    contact: "info@propertyhunters.co",
+    contact: "info@dialmasterssolutions.com",
   },
   {
     link: "https://wa.me/+14099168655",
     icon: <FaWhatsapp className="text-green-400 text-xl" />,
-    contact: "+1 (409) 916-8655",
+    contact: "(409) 916-8655",
   },
 ];
 
@@ -118,13 +118,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* <div>
-                <label className="font-medium">Message</label>
-                <textarea
-                  required
-                  className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-primary shadow-sm rounded-lg"
-                ></textarea>
-              </div> */}
               <button className="w-full px-4 py-2 text-white font-medium bg-primary hover:bg-[#3652adba] active:bg-[#3652adba] rounded-lg duration-150">
                 Submit
               </button>
