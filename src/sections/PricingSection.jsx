@@ -14,7 +14,7 @@ const plans = [
     ],
   },
   {
-    name: "2-5 callers",
+    name: "2-3 callers",
     price: 5,
     isMostPop: false,
     features: [
