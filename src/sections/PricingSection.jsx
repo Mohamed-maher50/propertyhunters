@@ -27,7 +27,6 @@ const plans = [
   },
   {
     name: "4 callers",
-
     subTitle: "customized pricing plans",
     isMostPop: true,
     features: [
