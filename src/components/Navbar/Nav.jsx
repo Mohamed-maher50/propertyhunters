@@ -42,10 +42,10 @@ export const Nav = () => {
         <div className="flex capitalize items-center justify-between  lg:block">
           <Link to={"/"}>
             <img
-              src="/Logo.png"
+              src="/logo.png"
               width={120}
               height={50}
-              alt="Float UI logo"
+              alt="Dial Masters Solutions (DMS)"
               className="h-[75px] object-contain"
             />
           </Link>
