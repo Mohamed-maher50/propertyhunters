@@ -1,6 +1,6 @@
 import React from "react";
 
-const PricingCard = ({ item }) => {
+const PricingCard = ({ item, subTitle }) => {
   return (
     <div
       className={`relative flex-1 bg-lightBlue min-w-80 max-w-96 text-start  flex items-stretch flex-col rounded-xl border-2 mt-6 sm:mt-0 ${
@@ -9,8 +9,10 @@ const PricingCard = ({ item }) => {
     >
       <div className="px-8 pt-5 space-y-4 border-b">
         <span className="text-3xl font-bold text-primary">{item.name}</span>
-
-        {item.price ? (
+        {item.subTitle && (
+          <div className="text-lg capitalize font-bold">{item.subTitle}</div>
+        )}
+        {/* {item.price ? (
           <>
             {" "}
             <div className=" text-3xl  font-semibold">
@@ -22,7 +24,7 @@ const PricingCard = ({ item }) => {
           <div className="text-lg capitalize font-bold">
             customized pricing plans
           </div>
-        )}
+        )} */}
 
         <p>{item.desc}</p>
       </div>

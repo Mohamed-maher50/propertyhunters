@@ -37,7 +37,7 @@ const KeyInsights = () => {
             <div className="grid   gap-6">
               <div className="grid gap-2">
                 <span className="text-primary underline opacity-80 italic  text-3xl font-bold">
-                  make it $2M
+                  $2,000,000
                 </span>
                 <h1 className="text-2xl  font-normal text-gray-600">
                   Deals closed from Leads

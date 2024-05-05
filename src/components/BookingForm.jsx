@@ -32,6 +32,7 @@ const BookingForm = () => {
         success: "thank you for connection👌",
         error: {
           render: (res) => {
+            console.log(res);
             return "error";
           },
         },
@@ -113,11 +114,15 @@ const BookingForm = () => {
           </div>
         </div>
       </div>
-      <Calendar
-        {...register("Calendar", {
-          required: "please choose a calendar",
-        })}
-      />
+      <div>
+        <FormLabel> Date/Time </FormLabel>
+        <Calendar
+          placeholder="Date/Time"
+          {...register("Calendar", {
+            required: "please choose a calendar",
+          })}
+        />
+      </div>
       <PrimaryButton type="submit">Book</PrimaryButton>
     </form>
   );
