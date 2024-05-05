@@ -6,7 +6,7 @@ import PrimaryButton from "./PrimaryButton";
 import WithWarningAalert from "./HOCs/WithWarningAalert";
 import { useForm } from "react-hook-form";
 import Calendar from "./Calendar";
-import { SendEmail } from "../services/SendMail";
+
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 const BookingForm = () => {
@@ -18,7 +18,6 @@ const BookingForm = () => {
   } = useForm();
 
   const handleSubmitForm = (values) => {
-    console.log(process.env.REACT_APP_EMAIL_SERVICES_POPUP_ID);
     toast.promise(
       emailjs.send(
         process.env.REACT_APP_EMAIL_SERVICES_POPUP_ID,
@@ -33,7 +32,6 @@ const BookingForm = () => {
         success: "thank you for connection👌",
         error: {
           render: (res) => {
-            console.log(res);
             return "error";
           },
         },
