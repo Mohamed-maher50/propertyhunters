@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { Trigger } from "@radix-ui/react-dialog";
 export const Nav = () => {
   const [state, setState] = useState(false);
   const navRef = useRef();
@@ -43,10 +43,8 @@ export const Nav = () => {
           <Link to={"/"}>
             <img
               src="/logo.png"
-              width={120}
-              height={50}
               alt="Dial Masters Solutions (DMS)"
-              className="h-[75px] object-contain"
+              className="h-[85px] object-contain"
             />
           </Link>
           <div className="lg:hidden">
@@ -92,15 +90,14 @@ export const Nav = () => {
           }`}
         >
           <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
-            <li className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <a
-                href="#contact-form"
+            <Trigger>
+              <li
                 onClick={() => setState(false)}
                 className="block py-2 px-4 text-center text-white font-medium bg-primary duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
               >
-                Let's get started
-              </a>
-            </li>
+                Book
+              </li>
+            </Trigger>
           </ul>
 
           <div className="flex-1 max-sm:my-5 items-end justify-end lg:flex pr-9">

@@ -48,7 +48,7 @@ const plans = [
       "SMS blasting $5/ per hour",
       "Solar Agents $8/ per hour",
       "Skip tracing $0.03 per record ( 20k-30k records )",
-      "$0.05 for 5k-15k  records",
+      "$0,04 for 5k-15k  records",
     ],
   },
 ];

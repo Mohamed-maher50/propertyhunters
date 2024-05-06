@@ -12,7 +12,7 @@ const PricingCard = ({ item, subTitle }) => {
         {item.subTitle && (
           <div className="text-lg capitalize font-bold">{item.subTitle}</div>
         )}
-        {/* {item.price ? (
+        {item.price && (
           <>
             {" "}
             <div className=" text-3xl  font-semibold">
@@ -20,11 +20,7 @@ const PricingCard = ({ item, subTitle }) => {
               <span className="text-xl  font-normal">/per hour</span>{" "}
             </div>
           </>
-        ) : (
-          <div className="text-lg capitalize font-bold">
-            customized pricing plans
-          </div>
-        )} */}
+        )}
 
         <p>{item.desc}</p>
       </div>

@@ -10,14 +10,15 @@ import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet";
 import NotFoundPage from "./pages/NotFoundPage";
 import Whatsapp from "./components/Whatsapp";
-import Test from "./components/Test";
+
+import { Root } from "@radix-ui/react-dialog";
 function App() {
   useEffect(() => {
     Aos.init();
   }, []);
 
   return (
-    <>
+    <Root defaultOpen={true}>
       <div className="container mx-auto">
         <Helmet>
           <meta charSet="utf-8" />
@@ -53,7 +54,7 @@ function App() {
         position="bottom-right"
         theme="light"
       />
-    </>
+    </Root>
   );
 }
 

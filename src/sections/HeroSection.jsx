@@ -23,19 +23,21 @@ const HeroSection = () => {
             deals
           </h2>
           <p>
-            <span className="text-4xl font-bold text-primary pe-2">DMS</span>
+            <span className="text-4xl font-bold text-primary pe-2">
+              Dial Masters Solutions
+            </span>
             provides virtual assistants who have at least 3 years experience in
             the real estate industry, and can get you more qualifed leads from
             calling your data lists. <br /> Proven model for scaling brokerages
             & Wholesaling Operations.
           </p>
           <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-            <Link
-              to={"/"}
+            <a
+              href="#contact-form"
               className="block py-2 px-4 text-center text-white font-medium bg-primary duration-150 hover:bg-indigo-800 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
             >
               Let's get started
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex-none mt-14 md:mt-0 md:max-w-xl">

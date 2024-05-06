@@ -5,7 +5,7 @@ import Services from "../sections/Services";
 import Advantage from "../sections/Advantage";
 import WhyUs from "../sections/WhyUs";
 import PricingSection from "../sections/PricingSection";
-import TeamSection from "../sections/TeamSection";
+
 import KeyInsights from "../sections/KeyInsights";
 import AreYouReady from "../sections/AreYouReady";
 import Contact from "./Contact";
