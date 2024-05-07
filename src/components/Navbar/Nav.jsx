@@ -39,14 +39,18 @@ export const Nav = () => {
   return (
     <nav ref={navRef} className="bg-white w-full top-0 z-20">
       <div className="items-center px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
-        <div className="flex capitalize items-center justify-between  lg:block">
-          <Link to={"/"}>
+        <div className="flex capitalize items-center justify-between ">
+          <Link to={"/"} className="flex items-center">
             <img
               src="/logo.png"
               alt="Dial Masters Solutions (DMS)"
               className="h-[85px] object-contain"
-            />
+            />{" "}
+            <span className=" -translate-x-5 text-primary">
+              Dial Masters Solutions
+            </span>
           </Link>
+
           <div className="lg:hidden">
             <button
               className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"

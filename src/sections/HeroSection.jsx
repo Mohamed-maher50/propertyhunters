@@ -23,9 +23,7 @@ const HeroSection = () => {
             deals
           </h2>
           <p>
-            <span className="text-4xl font-bold text-primary pe-2">
-              Dial Masters Solutions
-            </span>
+            <span className="text-4xl font-bold text-primary pe-2">DMS</span>
             provides virtual assistants who have at least 3 years experience in
             the real estate industry, and can get you more qualifed leads from
             calling your data lists. <br /> Proven model for scaling brokerages

@@ -1,17 +1,8 @@
-import React, { useState } from "react";
-import {
-  Dialog,
-  Portal,
-  Overlay,
-  Title,
-  Content,
-  Root,
-} from "@radix-ui/react-dialog";
+import React from "react";
+import { Portal, Overlay, Title, Content } from "@radix-ui/react-dialog";
 import BookingForm from "./BookingForm";
 
 const PopUpWithBookingForm = () => {
-  const [bookingFormStatus, seTbookingFormStatus] = useState(true);
-
   return (
     <Portal>
       <Overlay className=" bg-[rgba(0,0,0,.8)] z-20 DialogOverlay  fixed inset-0" />
