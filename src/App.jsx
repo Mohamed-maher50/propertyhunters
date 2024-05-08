@@ -12,6 +12,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Whatsapp from "./components/Whatsapp";
 
 import { Root } from "@radix-ui/react-dialog";
+import SocialMediaLinks from "./components/SocialMediaLinks";
 function App() {
   useEffect(() => {
     Aos.init();
@@ -43,6 +44,7 @@ function App() {
       </Routes>
       <Footer />
       <Whatsapp />
+      <SocialMediaLinks />
       <ToastContainer
         autoClose={5000}
         hideProgressBar={false}
@@ -54,6 +56,7 @@ function App() {
         position="bottom-right"
         theme="light"
       />
+      {/* socialMediaLinks */}
     </Root>
   );
 }
