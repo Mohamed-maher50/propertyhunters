@@ -43,7 +43,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
-      <Whatsapp />
+
       <SocialMediaLinks />
       <ToastContainer
         autoClose={5000}
